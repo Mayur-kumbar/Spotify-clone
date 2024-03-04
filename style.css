@@ -68,8 +68,6 @@ body {
 
 .libCont {
     gap: 10px;
-    /* padding: 20px; */
-    /* margin-bottom: none; */
 }
 
 .libraryText {
@@ -225,10 +223,8 @@ body {
 
 .cardsList {
     display: flex;
-    /* column-count: 5; */
     gap: 24px;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
     overflow-y: auto;
     max-height: 50vh;
 
@@ -290,12 +286,10 @@ body {
 }
 
 .img-btn {
-    /* display: none; */
     opacity: 0;
 }
 
 .card:hover .img-btn {
-    /* display: block; */
     opacity: 1;
     transition: all .7s ;
 }
@@ -339,7 +333,6 @@ body {
     font-size: 12px;
     max-height: 40vh;
     overflow: auto;
-    /* margin: 20px 0; */
 }
 
 .songList ul li {
@@ -362,19 +355,12 @@ body {
 
 .songVol {
     gap: 5px;
-    /* width: 200px; */
 }
 
 .volume {
     width: 100px;
     height: 3px;
 }
-
-/* .volume::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #949c94;
-    color: #121212;
-} */
 
 .songTime {
     font-size: 12px;
