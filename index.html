@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex  m-1">
+        <div class="left  m-1">
+            <img class="close" src="assets/close.svg" alt="">
+            <div class="home m-1">
+                <img class="m-2 invert" src="assets/logo.svg" alt="logo">
+                <ul>
+                    <li class="flex items-center m-2"><img class="icon invert" src="assets/home.svg" alt="home icon"><a
+                            href="#">Home</a></li>
+                    <li class="flex items-center m-2"><img class="icon invert" src="assets/search.svg"
+                            alt="search icon"><a href="#">Search</a></li>
+                </ul>
+            </div>
+            <div class="library">
+                <div class="libCont flex justify-center items-center cursor">
+                    <img class=" icon" src="assets/library.svg" alt="library image">
+                    <div class="libraryText">Your Library</div>
+                    <div class="plusIcon">+</div>
+                </div>
+                <div class="songList">
+                    <ul class="songUL">
+
+                    </ul>
+                </div>
+                <div class="footer m-t">
+                    <div class="footLinks flex">
+                        <div class="m-r m-b">
+                            <a href="https://www.spotify.com/in-en/legal/" id="aText" data-encore-id="textLink">
+                                <span data-encore-id="type">Legal</span>
+                            </a>
+                        </div>
+                        <div class="m-r m-b">
+                            <a href="https://www.spotify.com/in-en/privacy/" id="aText" data-encore-id="textLink">
+                                <span data-encore-id="type">Privacy Center</span>
+                            </a>
+                        </div>
+                        <div class="m-r m-b">
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="aText"
+                                data-encore-id="textLink">
+                                <span data-encore-id="type">Privacy Policy</span>
+                            </a>
+                        </div>
+                        <div class="m-r m-b">
+                            <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="aText"
+                                data-encore-id="textLink">
+                                <span data-encore-id="type">Cookies</span>
+                            </a>
+                        </div>
+                        <div class="m-r m-b">
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id="aText"
+                                data-encore-id="textLink">
+                                <span data-encore-id="type">About Ads</span>
+                            </a>
+                        </div>
+                        <div class="m-r m-b">
+                            <a href="https://www.spotify.com/in-en/accessibility/" id="aText" data-encore-id="textLink">
+                                <span data-encore-id="type">Accessibility</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footCookie">
+                        <a id="aText" draggable="false" href="https://www.spotify.com/legal/cookies-policy/"
+                            target="_blank" rel="noopener" class="ii8I2whaOzTr7LiAc8I3">
+                            <span class="Text__TextElement-sc-if376j-0 gYdBJW encore-text-marginal"
+                                data-encore-id="text">Cookies</span>
+                        </a>
+                    </div>
+                    <div class="footbtn flex m-t">
+                        <button class="flex items-center"><img class="invert" src="assets/footbtnlogo.svg"
+                                alt="button logo">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right m-1 ">
+            <div class="rightNav flex items-center  ">
+                <div class="rightNavBtn cursor ">
+
+                    <img class="hamburger" src="assets/hamburger.svg" alt="">
+                    <button class="cursor"><img class="invet " src="assets/navprev.svg" alt="previous button"></button>
+                    <button class="cursor"><img class="invet " src="assets/navNext.svg" alt="next button"></button>
+                </div>
+                <div class="rightNavCont flex items-center">
+                    <div class="rightNavContSec1 flex items-center cursor ">
+                        <div class="sec1Item">Premium</div>
+                        <div class="sec1Item">Support</div>
+                        <div class="sec1Item">Download</div>
+                    </div>
+                    <div class="line">
+
+                    </div>
+                    <div class="rightNavContSec2 cursor">
+                        <button class="cursor">Sign up</button>
+                        <button class="cursor">Log in</button>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="playlistBox">
+                    <h2>Spotify Playlists</h2>
+                    <div class="cardsList">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="playbar ">
+                <div class="songDetails">
+                    <div class="songInfo cursor">
+
+                    </div>
+                    <div class="playBtn flex items-center justify-center">
+                        <button><img class="cursor" id="previous" src="assets/playPrev.svg" alt=""></button>
+                        <button><img class="cursor" id="play" src="assets/play.svg" alt=""></button>
+                        <button><img class="cursor" id="next" src="assets/playNext.svg" alt=""></button>
+                    </div>
+                    <div class="songVol flex items-center">
+
+                        <div class="songTime cursor">
+                        </div>
+                        <img id="volume" class="cursor" src="assets/volume.svg" alt="">
+                        <input value="100" class="volume cursor" type="range" name="volume">
+                    </div>
+                </div>
+                <div class="seekbar">
+ 
+                </div>
+                <div class="circle">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

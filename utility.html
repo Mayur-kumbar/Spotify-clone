@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .card {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 100%; /* Initially position below the card */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: #4CAF50; /* Green color */
+            border-radius: 50%; /* Make it circular */
+            display: none; /* Initially hide the button */
+            cursor: pointer;
+            animation: slideIn 0.5s ease-out; /* Animation definition */
+        }
+
+        .card:hover .play-button {
+            display: flex; /* Display the button when the card is hovered */
+            animation: slideOut 0.5s ease-in; /* Animation definition on hover */
+        }
+
+        @keyframes slideIn {
+            from {
+                top: 100%;
+            }
+            to {
+                top: 50%; /* Slide up to the center */
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                top: 50%; /* Start from the center */
+            }
+            to {
+                top: 0; /* Slide up and disappear */
+            }
+        }
+
+        .play-icon {
+            color: white;
+            font-size: 18px;
+            line-height: 40px; /* Center vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="play-button">
+            <span class="play-icon">&#9654;</span>
+        </div>
+        <!-- Other card content goes here -->
+    </div>
+
+</body>
+</html>
